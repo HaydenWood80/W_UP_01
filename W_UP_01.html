@@ -406,11 +406,32 @@ SKILL players was 50</p>
 <div id="inferential-results" class="section level2">
 <h2>Inferential Results</h2>
 <!--State hypothesis clearly. Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc. Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+<pre class="r"><code>t.test(pushups~position,data=mydata)</code></pre>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  pushups by position
+## t = -5.4341, df = 27.079, p-value = 9.421e-06
+## alternative hypothesis: true difference in means between group LINE and group SKILL is not equal to 0
+## 95 percent confidence interval:
+##  -44.91068 -20.29387
+## sample estimates:
+##  mean in group LINE mean in group SKILL 
+##            17.12500            49.72727</code></pre>
+<p>The P value is 0.000009421 which is less than 0.05 so we reject <span class="math inline">\(H_0\)</span></p>
 </div>
 </div>
 <div id="discussion-and-conclusion" class="section level1">
 <h1>Discussion and Conclusion</h1>
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+<p>The original problem that we had to solve was, finding if position
+skill players and position line players have a difference in push ups
+during a 2 minute time period. During our research we found that the
+LINE position players have a mean of 17.12500, and the SKILL position
+players had a mean of 49.72727. The difference in both positions of mean
+push ups is greater that 0.5, This means that there is more than enough
+evidence to reject the #H_0$ and say that SKILL players can complete
+more push ups than LINE players</p>
 </div>
 
 
